@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>App Name: A Coding Project By Brian Wiggins</title>
+    <title>Palindrome: A Coding Project By Brian Wiggins</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -21,7 +21,7 @@
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <!--===Nav Section===-->
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="./img/3dcube.png" class="d-inline-block align-text-top" width="30" height="24"> App Name</a>
+            <a class="navbar-brand" href="#"><img src="./img/3dcube.png" class="d-inline-block align-text-top" width="30" height="24"> Palindrome</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -49,7 +49,37 @@
     </nav>
      <!--===Main Section===-->
      <main class="flex-shrink-0">
-         <div class="container"> 
+         <div class="container mt-5"> 
+            <div class="row row-cols-1 row-cols-lg-2">
+                <div class="col col-lg-4 border-end border-2">
+                      <h1>Palindrome: A Coding Project</h1>
+                      <h4 class="lead">
+                        A javascript coding exercise to check any word and see if it is a <b>palindrome</b>.  A word that can be spelled the same both forwards and backwards. 
+                      </h4>
+                      <h2 class="mt-5 border-bottom border-2">Instructions</h2>
+                      <p>Enter a starting value and a ending value. Press the bottom button.</p>
+                </div>
+                <div class="col-8">
+                    <div>
+                      <h5>Enter a phrase or a word to check</h5>
+                      <form class="row gy-2 gx-3">
+                          <div class="col">
+                              <input id="inputText" type="text" class="form-control" placeholder="Insert Text Here" aria-label="Insert Text Here">
+                          </div>
+                          <div class="text-danger" id="validation-summary"></div>
+                          <div class="col-12 d-flex justify-content-end">
+                              <button type="button" class="btn btn-dark btn-lg" id="btnSubmit">Run Program</button>
+                          </div>
+                      </form>
+                        <h2 class="mt-5 border-bottom border-2">Results</h2>
+                        <div class="alert alert-danger mt-5 invisible fade show" id="alert">
+                            <h4 id="alert-header" class="alert-heading"></h4>
+                            <hr>
+                            <p class="mb-0" id="msg"></p>
+                            <!--Insert answer here-->
+                        </div>
+                    </div>
+              </div>
          </div>
      </main>
     <!--===Footer Section===-->
@@ -77,6 +107,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous">
     </script>
-    <script src=".js/site.js"></script>
+    <script src="./js/site.js"></script>
 </body>
 </html>
