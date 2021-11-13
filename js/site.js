@@ -79,8 +79,3 @@ function DisplayPalindromeResults(isPalindrome, textInput){
     document.getElementById("msg").innerHTML=`Your phrase reversed is: ${reversedString}`;
     document.getElementById("alert").classList.remove("invisible");
 }
-
-
-
-
-
